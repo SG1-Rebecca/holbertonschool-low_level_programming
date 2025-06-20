@@ -12,8 +12,8 @@ for (alphabet_soup = 'a'; alphabet_soup <= 'z'; alphabet_soup++)
 if (alphabet_soup != 'q' && alphabet_soup != 'e')
 {
 putchar(alphabet_soup);
+}
+}
 putchar('\n');
-}
-}
 return (0);
 }
