@@ -11,8 +11,11 @@ for (repeat = 0; repeat <= 10; repeat++)
 {
 int more_nb;
 for (more_nb = 0; more_nb <= 14; more_nb++)
-_putchar(more_nb % 10 + '0');
-_putchar('\n');
+{
+if (more_nb >= 10)
+_putchar((more_nb / 10) + '0');
+_putchar((more_nb % 10) + '0');
 }
 _putchar('\n');
+}
 }
