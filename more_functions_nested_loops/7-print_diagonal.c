@@ -11,14 +11,14 @@ if (n <= 0)
 _putchar('\n');
 else
 {
-int diagonal_line;
-for (diagonal_line = 0; diagonal_line < n; diagonal_line++)
+int diag_line;
+for (diag_line = 0; diag_line < n; diag_line++)
 {
 int space;
 for (space = 0; space < n; space++)
 _putchar(' ');
+}
 _putchar('\\');
 _putchar('\n');
-}
 }
 }
