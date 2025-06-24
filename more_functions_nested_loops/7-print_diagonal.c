@@ -13,7 +13,11 @@ else
 {
 int diagonal_line;
 for (diagonal_line = 0; diagonal_line < n; diagonal_line++)
+{
+int space;
+for (space = 0; space < n; space++)
 _putchar(' ');
+}
 _putchar('\\');
 _putchar('\n');
 }
