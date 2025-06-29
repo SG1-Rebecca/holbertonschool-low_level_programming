@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* print_array: print elements of an array of int
+* print_array - print elements of an array of int
 * @a: array of int
 * @n: number of elements of the array to be printed
 */
