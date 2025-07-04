@@ -1,17 +1,19 @@
 #include "main.h"
-
+/**
+* times_table - print the 9 times table
+*
+*/
 void times_table(void)
 {
 int loop;
 int cols;
-int table_time = 9;
 int res;
 
 for (loop = 0; loop < 10; loop++)
 {
 	for (cols = 0; cols < 10; cols++)
 	{
-	res = loop * table_time;
+	res = loop * cols;
 	if (cols != 0)
 	{
 	_putchar(',');
