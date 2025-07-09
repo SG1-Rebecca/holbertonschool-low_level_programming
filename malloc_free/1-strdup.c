@@ -11,15 +11,22 @@ or NULL if insufficient memory or str is NULL
 char *_strdup(char *str)
 {
 char *new_str;
+ int length, i;
 if (str == NULL)
 {
 return (NULL);
 }
-new_str = malloc(strlen(str) + 1);
+for (length = 0; str[length] != '\0'; length++)
+{
+}
+new_str = malloc((length + 1) * sizeof(char));
 if (new_str == NULL)
 {
 return (NULL);
 }
-strcpy(new_str, str);
+for (i = 0; i <= length; i++)
+{
+new_str[i] = str[i];
+}
 return (new_str);
 }
