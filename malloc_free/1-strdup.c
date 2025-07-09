@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-* strdup - return a pointer to a new string
+* _strdup - return a pointer to a new string
 * @str: the string to duplicate
 *
 * Return: pointer to the duplicated string,
-or NULL if insufficient memory or str is NULL
+* or NULL if insufficient memory or str is NULL
 */
 char *_strdup(char *str)
 {
 char *new_str;
- int length, i;
+int length, i;
 if (str == NULL)
 {
 return (NULL);
