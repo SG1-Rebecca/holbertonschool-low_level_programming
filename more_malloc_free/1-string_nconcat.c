@@ -26,10 +26,10 @@ for (length_s1 = 0; s1[length_s1] != '\0'; length_s1++)
 }
 for (length_s2 = 0; s2[length_s2] != '\0'; length_s2++)
 {
+}
 if (n >= length_s2)
 {
 n = length_s2;
-}
 }
 new_str = malloc(sizeof(char) * (length_s1 + n + 1));
 if (new_str == NULL)
@@ -40,10 +40,10 @@ for (i = 0; i < length_s1; i++)
 {
 new_str[i] = s1[i];
 }
-for (j = 0; i < length_s2; j++)
+for (j = 0; j < n; j++)
 {
-new_str[i + j] = s2[j];
+new_str[length_s1 + j] = s2[j];
 }
-new_str[i + j] = '\0';
+new_str[length_s1 + j] = '\0';
 return (new_str);
 }
