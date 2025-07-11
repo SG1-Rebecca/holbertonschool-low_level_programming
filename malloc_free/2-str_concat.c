@@ -25,7 +25,7 @@ for (length_s1 = 0; s1[length_s1]; length_s1++)
 for (length_s2 = 0; s2[length_s2]; length_s2++)
 {
 }
- concat = malloc(sizeof(char) * (length_s1 + length_s2 + 1));
+concat = malloc(sizeof(char) * (length_s1 + length_s2 + 1));
 if (concat == NULL)
 {
 return (NULL);
