@@ -9,7 +9,7 @@
 */
 size_t print_list(const list_t *h)
 {
-    size_t nodes;
+    size_t nodes = 0;
     const list_t *head;
     for (head = h; head != NULL; head = head->next)
     {
@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
         }
         else
         {
-            printf("[%d] %s\n", head->len, head->str);
+            printf("[%u] %s\n", head->len, head->str);
         }
         
         nodes++;
