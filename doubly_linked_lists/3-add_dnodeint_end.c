@@ -18,6 +18,7 @@ return (NULL);
 }
 new_node->n = n;
 new_node->next = NULL;
+/* Check if the head of the list is empty*/
 if (*head == NULL)
 {
 new_node->prev = NULL;
